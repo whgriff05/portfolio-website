@@ -1,0 +1,10 @@
+Jinja2==3.1.6
+Markdown==3.10.2
+markdown-it-py==4.0.0
+MarkupSafe==3.0.3
+mdurl==0.1.2
+Pygments==2.19.2
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+rich==14.3.3
+six==1.17.0
