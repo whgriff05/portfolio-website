@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="64x64" href="static/ico/favicon.png">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="static/css/styles.css">
+
+        {% if not page.path[-1] == 'index.yaml' %}
+        <title>{{ page.title }}</title>
+        {% else %}
+        <title>{{ page.title }}</title>
+        {% endif %}
+    </head>
+
+    <body>
+        <header>
+            {% include "header.html" %}
+        </header>
+
+        <main>
+            {% block main %}
+            {% endblock main %}
+        </main>
+
+        <footer>
+            {% include "footer.html" %}
+        </footer>
+
+    </body>
+</html>

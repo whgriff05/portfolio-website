@@ -1,0 +1,20 @@
+title: Portfolio Website
+navigation:
+  - name: "About Me"
+    link: "#aboutme"
+  - name: "Projects"
+    link: "#projects"
+internal:
+external:
+body:   |
+  Hi, I'm Will Griffin!
+
+  ## Aboutme
+  
+  Hi, I'm Will
+
+  ## Projects
+  
+  here are my projects
+  
+
