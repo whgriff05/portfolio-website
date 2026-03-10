@@ -27,8 +27,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 0 12.5rem;
     margin: 1rem 0;
 }
 
@@ -38,7 +37,8 @@
 }
 
 .headshot-frame {
-    height: 350px;
+    height: 21.875rem;
+    width: 21.875rem;
     aspect-ratio: 1/1;
     border: 2px solid var(--light_green);
     border-radius: 50%;
@@ -49,10 +49,31 @@
 
     background-color: var(--light_green);
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .headshot-frame img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* --- Mobile --- */
+@media (max-width: 1024px) {
+    .flex-row-space {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-row-space {
+        flex-direction: column;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    .headshot-frame {
+        height: 15rem;
+        width: 15rem;
+    }
 }

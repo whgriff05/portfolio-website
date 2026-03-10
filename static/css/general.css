@@ -41,13 +41,12 @@ body {
 
     line-height: 1.5em;
     overflow-y: auto;
-    /*max-width: var(--page_width);*/
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 1rem;
-    margin: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
 h2 {
@@ -59,19 +58,15 @@ h2 {
 header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     align-items: center;
     justify-content: space-between;
 
     border-bottom: 1px solid var(--light_green);
-    padding: 0.5rem 0;
+    padding: 1rem 4rem;
 
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 64px;
-    padding-left: 64px;
-
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .logo {
@@ -79,35 +74,23 @@ header {
     color: var(--foreground);
 
     text-decoration: bold;
-    font-size: 52px;
+    font-size: 3.25rem;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    margin-left: 30px;
-
+    gap: 1.875rem;
 }
 
 .nav-links li a {
     text-decoration: none;
     color: var(--foreground);
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .nav-links li a:hover {
     text-decoration: underline;
-}
-
-.footer-text {
-    text-decoration: none;
-    color: var(--foreground);
-    font-size: 20px;
 }
 
 .code-block {
@@ -116,7 +99,7 @@ header {
     font-size: 24px;
     font-style: normal;
 
-    padding: 8px;
+    padding: 0.5rem;
 
     border: 1px solid var(--light_green);
     border-radius: 8px;
@@ -125,7 +108,7 @@ header {
 .text-block {
     font-size: 20px;
 
-    padding: 16px;
+    padding: 1rem;
 
     border: 1px solid var(--light_green);
     border-radius: 8px;
@@ -166,7 +149,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 32px;
+    margin-top: 2rem;
+}
+
+.footer-text {
+    text-decoration: none;
+    color: var(--foreground);
+    font-size: 20px;
 }
 
 .footer-link {
@@ -203,4 +192,22 @@ footer {
     animation-name: fadeIn;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .flex-row {
+        flex-direction: column;
+    }
 }
