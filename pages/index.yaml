@@ -1,20 +1,56 @@
-title: Portfolio Website
+title: Will Griffin
 navigation:
+  - name: "Home"
+    link: "index.html"
   - name: "About Me"
-    link: "#aboutme"
+    link: "#about-me"
   - name: "Projects"
     link: "#projects"
-internal:
-external:
 body:   |
-  Hi, I'm Will Griffin!
+  <div class="flex-row-space">
 
-  ## Aboutme
-  
-  Hi, I'm Will
+  <div class="flex-column">
 
-  ## Projects
-  
-  here are my projects
-  
+  <div class="code-block" markdown="1">
+  <span class="light-green">whgriff</span> on <span class="light-green">website</span> $ <strong>bio</strong> <br><br>
+  <span class="light-green">whgriff</span>@<span class="light-green">biography</span><br>
+  -----------------<br>
+  <span class="light-yellow">Name</span>: Will Griffin<br>
+  <span class="light-yellow">School</span>: University of Notre Dame<br>
+  <span class="light-yellow">Year</span>: Sophomore<br>
+  <span class="light-yellow">Major</span>: Computer Science<br>
+  <span class="light-yellow">Email</span>: <a href="mailto:whgriff24@gmail.com" class="bio-email">whgriff24@gmail.com</a><br>
 
+
+  </div>
+
+  </div>
+  
+  <div class="headshot-frame">
+  <img class="headshot" src="static/ico/headshot_square.png" alt="Professional Headshot">
+  </div>
+
+  </div>
+
+  <div class="text-block" markdown="1">
+  ## About Me 
+  
+  Hi, I'm __Will Griffin__, a sophomore at the [University of Notre Dame](https://nd.edu) studying Computer Science with minors in Engineering Corporate Practice and Liturgical Music Ministry. I'm originally from Fishers, IN, and on campus, I am a resident of [Coyle Hall](https://www.coylehallnd.com).<br>
+
+  <br>
+
+  I'm interested in low-level computing with proficiencies in __C__ and __Bash__, and I am interested in studying __Operating Systems__, __Programming Languages and Compilers__, __Optimized Computing__, and __Networking__.<br>
+
+  <br>
+
+  Outside of the classroom, I have also made a few personal tools such as [pymd](https://github.com/whgriff05/pymd), a terminal markdown viewer to visualize class notes using Python and ncurses, and [pomodoro](https://github.com/whgriff05/pomodoro), a small pomodoro timer application made with C and Raylib. In addition, I've started self-hosting projects such as this website and soju, an IRC bouncer, for the [NDLUG](https://ndlug.org) IRC.<br>
+
+  <br>
+
+  Apart from tech, I am also highly interested in music, being a pianist, organist, chorister, and self-taught guitarist. I sing in the [Notre Dame Liturgical Choir](https://litchoir.nd.edu) and accompany Masses for both my dorm's chapel and my home parish. I also enjoy cooking, reading history, lifting, and bar trivia.<br>
+
+  <br>
+
+  Feel free to get in touch with me via [whgriff24@gmail.com](mailto:whgriff24@gmail.com) or [LinkedIn](https://www.linkedin.com/in/william-henry-griffin/)!
+
+  </div>

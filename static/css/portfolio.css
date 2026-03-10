@@ -1,0 +1,58 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --light_red: #ff5370;
+    --light_green: #c3e88d;
+    --light_yellow: #ffcb6b;
+    --light_blue: #82aaff;
+    --light_magenta: #D49BFD;
+    --light_cyan: #89ddff;
+    --light_cloud: #b2ccd6;
+    --light_grey: #a0a0a0;
+    --dark_red: #9e4057;
+    --dark_green: #7d9367;
+    --dark_yellow: #ffcb6b;
+    --dark_blue: #5970a6;
+    --dark_magenta: #9e73bd;
+    --dark_cyan: #76bedb;
+    --dark_cloud: #b7d2da;
+    --dark_grey: #666666;
+
+    --background: #252837;
+    --foreground: #c5d0f5;
+}
+
+.flex-row-space {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: 1rem 0;
+}
+
+.bio-email {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+.headshot-frame {
+    height: 350px;
+    aspect-ratio: 1/1;
+    border: 2px solid var(--light_green);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--light_green);
+    overflow: hidden;
+}
+
+.headshot-frame img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}

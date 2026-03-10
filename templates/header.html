@@ -1,11 +1,9 @@
-<a class="logo" href="{{ page.link }}">
-    <h1>{{ (page.title or site.title) }}</h1>
-</a>
+<a class="logo" href="{{ page.link }}">{{ (page.title or site.title) }}</a>
 
 <nav>
-    <ul>
+    <ul class="nav-links">
     {% for p in (page.navigation or site.navigation) %}
-    <li><a href="{{ p['link'] }}"><h4>{{ p['name'] }}</h4></a></li>
+    <li><a href="{{ p['link'] }}">{{ p['name'] }}</a></li>
     {% endfor %}
     </ul>
 </nav>
